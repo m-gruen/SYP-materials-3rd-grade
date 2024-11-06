@@ -1,3 +1,6 @@
 [submodule "002_Projektantrag"]
 	path = 002_Projektantrag
 	url = git@github.com:2425-3ahif-syp/01-lab-projektantrag-m-gruen.git
+[submodule "003_HTL_Fragebogen"]
+	path = 003_HTL_Fragebogen
+	url = git@github.com:2425-3ahif-syp/02-projekte-fragebogen-htl.git
