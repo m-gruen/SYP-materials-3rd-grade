@@ -1,0 +1,58 @@
+= Testing AsciiDoc
+:icons: font
+:toc:
+
+== Asciidoc
+
+=== Präambel
+
+
+
+=== Admonition
+
+* Voraussetzung: `:icons: font` in der Präambel
+
+* Beispiel:
+
+IMPORTANT: Hallo
+
+NOTE: Test
+
+TIP: Test
+
+WARNING: Test
+
+CAUTION: Test
+
+* Admonition mit Block
+
+[IMPORTANT]
+.Test
+====
+Hallo
+
+Wichtig
+
+Alles im Block! 
+====
+
+=== Callouts
+
+[source, java]
+----
+public class MyStack {
+    boolean isEmpty() { // <.>
+        return true; // <.>
+    }
+}
+----
+
+<.> Kommentar 1
+<.> Kommentar 2
+
+[source, java]
+----
+include::./MyStack.java[]
+----
+
+<.> Kommentar 3
