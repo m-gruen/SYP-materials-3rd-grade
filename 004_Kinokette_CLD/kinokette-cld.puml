@@ -1,0 +1,44 @@
+@startuml kinokette
+
+title Kinokette
+
+class Kino {
+}
+
+class Saal {
+}
+
+class Film {
+}
+
+class Vorstellung {
+}
+
+class Ticket {
+}
+
+class Person {
+}
+
+class Reihe {
+}
+
+class Sitz {
+}
+
+class Genre {
+}
+
+Vorstellung -- Saal
+Vorstellung -- Film 
+Kino -- Saal
+Vorstellung -- Ticket
+(Film, Person) .. Engagement
+Engagement --> Rolle
+Reihe <-- Sitz
+Reihe --> Saal
+Ticket --> Sitz
+(Reihe, Vorstellung) .. Preis
+Film --> Genre
+
+@enduml
