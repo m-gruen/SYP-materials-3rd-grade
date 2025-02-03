@@ -38,6 +38,7 @@ Alles im Block!
 
 === Callouts
 
+* Automatische Nummerierung
 [source, java]
 ----
 public class MyStack {
@@ -50,9 +51,46 @@ public class MyStack {
 <.> Kommentar 1
 <.> Kommentar 2
 
+* Manuelle Nummerierung
 [source, java]
 ----
-include::./MyStack.java[]
+public class MyStack {
+    boolean isEmpty() { // <1>
+        return true; // <2>
+    } // <1>
+} 
+----
+
+<1> Kommentar 1
+<2> Kommentar 2
+
+* In einem File
+[source, java]
+----
+include::./MyStack.java[tags=stack]
 ----
 
 <.> Kommentar 3
+
+* Highlighting
+
+[source, java,highlight=1;3]
+----
+public class MyStack {
+    boolean isEmpty() { // <.>
+        return true; // <.>
+    }
+}
+----
+
+<.> Kommentar 1
+<.> Kommentar 2
+
+
+[plantuml, myDiagram, svg]
+----
+@startuml
+class Car {}
+@enduml
+----
+
