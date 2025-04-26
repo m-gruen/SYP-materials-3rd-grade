@@ -94,3 +94,28 @@ class Car {}
 @enduml
 ----
 
+=== Einklappbare Blöcke
+
+.Mehr Informationen anzeigen
+[%collapsible]
+// [%collapsible%open]
+====
+Hier stehen zusätzliche Details.
+
+* Punkt 1
+* Punkt 2
+* Punkt 3
+====
+
+=== Überschriften
+
+* `=` für die Hauptüberschrift
+* `==` für die zweite Ebene
+* `===` für die dritte Ebene
+
+Beispiel:
+
+[source, adoc]
+----
+include::./headings.adoc[]
+----
