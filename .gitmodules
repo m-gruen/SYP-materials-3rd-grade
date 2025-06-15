@@ -4,3 +4,6 @@
 [submodule "003_HTL_Fragebogen"]
 	path = 003_HTL_Fragebogen
 	url = git@github.com:2425-3ahif-syp/02-projekte-fragebogen-htl.git
+[submodule "007_Webserver"]
+	path = 007_Webserver
+	url = git@github.com:2425-3ahif-syp/03-lab-webserver-with-db-m-gruen.git
